@@ -42,4 +42,10 @@ return require('packer').startup(function(use)
 	use 'nvim-tree/nvim-web-devicons'
 	use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
 	use ('tpope/vim-fugitive')
+	use 'tpope/vim-commentary'
+	use {
+		'nvim-lualine/lualine.nvim',
+		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+	}
 end)
+

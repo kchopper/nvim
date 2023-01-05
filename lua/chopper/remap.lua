@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>b", vim.cmd.NvimTreeToggle)
-
+vim.keymap.set("n", "<leader>q", '<gcc>')
+vim.keymap.set("n", "<leader>l", vim.cmd.vsplit)
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 -- Hoping Between Splits
@@ -38,7 +39,7 @@ map('n', '<m-c>', '<Cmd>BufferClose<CR>', opts)
 --                 :BufferCloseBuffersLeft
 --                 :BufferCloseBuffersRight
 -- Magic buffer-picking mode
-map('n', '<C-p>', '<Cmd>BufferPick<CR>', opts)
+map('n', '<C-m>', '<Cmd>BufferPick<CR>', opts)
 -- Sort automatically by...
 map('n', '<Space>bb', '<Cmd>BufferOrderByBufferNumber<CR>', opts)
 map('n', '<Space>bd', '<Cmd>BufferOrderByDirectory<CR>', opts)
