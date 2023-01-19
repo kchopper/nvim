@@ -55,5 +55,6 @@ return require('packer').startup(function(use)
 		require("toggleterm").setup()
 	end}
 	use "lukas-reineke/indent-blankline.nvim"
+	use 'jose-elias-alvarez/null-ls.nvim'
 end)
 
