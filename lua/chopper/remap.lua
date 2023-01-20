@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>b", vim.cmd.NvimTreeToggle)
+vim.keymap.set("n", "<leader>o", vim.cmd.NvimTreeCollapse)
 vim.keymap.set("n", "<leader>q", '<gcc>')
 vim.keymap.set("n", "<leader>l", vim.cmd.vsplit)
 local map = vim.api.nvim_set_keymap
