@@ -1,5 +1,5 @@
 vim.opt.nu = true
-vim.opt.rnu = true
+vim.opt.rnu = false
 vim.opt.tabstop=2
 vim.opt.smartindent=true
 vim.opt.shiftwidth=2
