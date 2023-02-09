@@ -57,6 +57,5 @@ return require('packer').startup(function(use)
 	use "lukas-reineke/indent-blankline.nvim"
 	use 'jose-elias-alvarez/null-ls.nvim'
 	use 'rcarriga/nvim-notify'
-	use 'weizheheng/ror.nvim'
 end)
 

@@ -190,11 +190,6 @@ _G.packer_plugins = {
     path = "/Users/Chopper/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["ror.nvim"] = {
-    loaded = true,
-    path = "/Users/Chopper/.local/share/nvim/site/pack/packer/start/ror.nvim",
-    url = "https://github.com/weizheheng/ror.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/Chopper/.local/share/nvim/site/pack/packer/start/telescope.nvim",
