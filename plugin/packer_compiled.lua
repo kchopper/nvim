@@ -82,8 +82,7 @@ _G.packer_plugins = {
   ["barbar.nvim"] = {
     loaded = true,
     path = "/Users/Chopper/.local/share/nvim/site/pack/packer/start/barbar.nvim",
-    url = "https://github.com/romgrk/barbar.nvim",
-    wants = { "nvim-web-devicons" }
+    url = "https://github.com/romgrk/barbar.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -165,6 +164,12 @@ _G.packer_plugins = {
     path = "/Users/Chopper/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
   },
+  ["nvim-test"] = {
+    config = { "\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-test\frequire\0" },
+    loaded = true,
+    path = "/Users/Chopper/.local/share/nvim/site/pack/packer/start/nvim-test",
+    url = "https://github.com/klen/nvim-test"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/Chopper/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -179,6 +184,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/Chopper/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/Users/Chopper/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -201,11 +211,6 @@ _G.packer_plugins = {
     path = "/Users/Chopper/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/Chopper/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
-  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/Users/Chopper/.local/share/nvim/site/pack/packer/start/vim-commentary",
@@ -219,6 +224,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-test
+time([[Config for nvim-test]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-test\frequire\0", "config", "nvim-test")
+time([[Config for nvim-test]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")

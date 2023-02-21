@@ -6,3 +6,4 @@ vim.opt.shiftwidth=2
 vim.cmd.cmdHeight=0
 vim.opt.wildmenu = true
 vim.opt.wildmode='longest:full'
+vim.opt.clipboard='unnamedplus'

@@ -10,7 +10,7 @@ return require('packer').startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-	use { "folke/tokyonight.nvim" }
+	use 'navarasu/onedark.nvim'
 	use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use {
 		'VonHeikemen/lsp-zero.nvim',
@@ -40,7 +40,7 @@ return require('packer').startup(function(use)
 		},
 	}
 	use 'nvim-tree/nvim-web-devicons'
-	use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
+	use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
 	use ('tpope/vim-fugitive')
 	use 'tpope/vim-commentary'
 	use {
@@ -57,5 +57,12 @@ return require('packer').startup(function(use)
 	use "lukas-reineke/indent-blankline.nvim"
 	use 'jose-elias-alvarez/null-ls.nvim'
 	use 'rcarriga/nvim-notify'
+	--test case
+	use {
+		"klen/nvim-test",
+		config = function()
+			require('nvim-test').setup()
+		end
+	}
 end)
 
