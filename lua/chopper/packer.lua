@@ -40,7 +40,7 @@ return require('packer').startup(function(use)
 		},
 	}
 	use 'nvim-tree/nvim-web-devicons'
-	use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
+	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 	use ('tpope/vim-fugitive')
 	use 'tpope/vim-commentary'
 	use {
